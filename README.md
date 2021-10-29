@@ -1,2 +1,2 @@
-# wp-republish
+# WordPress Republish
 Republish WordPress posts
