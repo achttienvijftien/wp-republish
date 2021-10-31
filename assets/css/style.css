@@ -1,0 +1,12 @@
+.repub-time #repub-timestamp:before {
+	color: #8c8f94;
+	font: normal 20px/1 dashicons;
+	display: inline-block;
+	margin-left: -1px;
+	padding-right: 3px;
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+	content: "\f321";
+	position: relative;
+	top: -1px;
+}

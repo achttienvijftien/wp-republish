@@ -14,6 +14,8 @@
  * @package         AchttienVijftien\Plugin\Republish
  */
 
+require plugin_dir_path( __FILE__ ) . 'src/Bootstrap.php';
+
 if ( file_exists( plugin_dir_path( __FILE__ ) . 'vendor/autoload.php' ) ) {
 	require plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 }
