@@ -7,6 +7,7 @@
 
 namespace AchttienVijftien\Plugin\Republish;
 
+use AchttienVijftien\Plugin\Republish\Admin\Settings;
 use AchttienVijftien\Plugin\Republish\Admin\SetDate;
 
 /**
@@ -42,6 +43,7 @@ class Admin {
      * Initialize admin functions.
      */
     public function init(): void {
+        new Settings();
         new SetDate();
     }
 }
