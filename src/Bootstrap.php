@@ -7,11 +7,6 @@
 
 namespace AchttienVijftien\Plugin\Republish;
 
-require plugin_dir_path( __FILE__ ) . 'Admin.php';
-require plugin_dir_path( __FILE__ ) . 'Config.php';
-require plugin_dir_path( __FILE__ ) . 'Admin/Settings.php';
-require plugin_dir_path( __FILE__ ) . 'Admin/SetDate.php';
-
 /**
  * Bootstrap plugin.
  */

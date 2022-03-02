@@ -26,6 +26,7 @@ class SetDate {
 	 */
 	public function republish_date_meta_box( $post ) {
 		global $action;
+		$date = '';
 
 		$post_id = (int) $post->ID;
 
@@ -60,11 +61,11 @@ class SetDate {
 			<span id="repub-timestamp">
 				<?php echo __( 'Republish on:', 'wp-republish' ) . '<b>' . $date . '</b>'; ?>
 			</span>
-			<a href="#edit-repub-timestamp" class="edit-timestamp hide-if-no-js" role="button">
+			<a href="#edit-repub-timestamp" > <!-- class="edit-timestamp hide-if-no-js" role="button"> -->
 				<span aria-hidden="true"><?php _e( 'Edit' ); ?></span>
 				<span class="screen-reader-text"><?php _e( 'Edit date and time' ); ?></span>
 			</a>
-			<fieldset id="repub-timestampdiv" class="hide-if-js">
+			<fieldset id="repub-timestampdiv" >
 				<legend class="screen-reader-text"><?php _e( 'Date and time' ); ?></legend>
 				<?php touch_time( 0, 1 ); ?>
 			</fieldset>
@@ -72,5 +73,4 @@ class SetDate {
 		<?php
 
 	}
-
 }
