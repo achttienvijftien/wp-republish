@@ -22,7 +22,7 @@ class SetDate {
 	}
 
 	/**
-	 * Adds the republish date picker
+	 * Adds the republish date picker.
 	 */
 	public function republish_date_meta_box( $post ) {
 		global $action;
@@ -30,12 +30,12 @@ class SetDate {
 
 		$post_id = (int) $post->ID;
 
-		// bail early if no post ID
+		// bail early if no post ID.
 		if ( 0 === $post_id ) {
 			return '';
 		}
 
-		// bail early if not published or private
+		// bail early if not published or private.
 		if ( 'publish' !== $post->post_status && 'private' !== $post->post_status ) {
 			return '';
 		}
@@ -44,7 +44,7 @@ class SetDate {
 		$post_type_object = get_post_type_object( $post_type );
 		$can_publish      = current_user_can( $post_type_object->cap->publish_posts );
 
-		// bail early if incorrect user privileges
+		// bail early if incorrect user privileges.
 		if ( ! $can_publish ) { // Contributors don't get to choose the date of publish.
 			return '';
 		}
